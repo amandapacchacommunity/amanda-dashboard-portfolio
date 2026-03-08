@@ -65,16 +65,12 @@ This dataset allows dashboards to track **mitigation progress and operational ri
 ## Dashboard Visualizations
 
 ### ERM Dashboard
-![ERM Dashboard](https://raw.githubusercontent.com/amandapacchacommunity/amanda-dashboard-portfolio/main/dashboards/erm_dashboard.png)
 
 ### Risk Heatmap
-![Risk Heatmap](https://raw.githubusercontent.com/amandapacchacommunity/amanda-dashboard-portfolio/main/dashboards/risk_heatmap.png)
 
 ### Mitigation Summary
-![Mitigation Summary](https://raw.githubusercontent.com/amandapacchacommunity/amanda-dashboard-portfolio/main/dashboards/mitigation_summary.png)
 
 ### Dashboard Mockup
-![Dashboard Mockup](https://raw.githubusercontent.com/amandapacchacommunity/amanda-dashboard-portfolio/main/dashboards/dashboard_mockup.png)
 
 ---
 
