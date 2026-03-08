@@ -65,17 +65,16 @@ This dataset allows dashboards to track **mitigation progress and operational ri
 ## Dashboard Visualizations
 
 ### ERM Dashboard
-![ERM Dashboard](dashboards/erm_dashboard.png)
+![ERM Dashboard](./dashboards/erm_dashboard.png)
 
 ### Risk Heatmap
-![Risk Heatmap](dashboards/risk_heatmap.png)
+![Risk Heatmap](./dashboards/risk_heatmap.png)
 
 ### Mitigation Summary
-![Mitigation Summary](dashboards/mitigation_summary.png)
+![Mitigation Summary](./dashboards/mitigation_summary.png)
 
 ### Dashboard Mockup
-![Dashboard Mockup](dashboards/dashboard_mockup.png)
-
+![Dashboard Mockup](./dashboards/dashboard_mockup.png)
 ---
 
 ## Example Dashboard Use Cases
