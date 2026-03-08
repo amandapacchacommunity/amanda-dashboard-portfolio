@@ -15,7 +15,8 @@ function parseCSV(text) {
 }
 
 async function loadDashboard() {
-  const riskResponse = await fetch("../data/risk_register.csv");
+
+  const riskResponse = await fetch("data/risk_register.csv");
   const riskText = await riskResponse.text();
 
   const risks = parseCSV(riskText).map(r => ({
@@ -25,41 +26,55 @@ async function loadDashboard() {
     risk_score: Number(r.impact_level) * Number(r.probability_level)
   }));
 
-  const actionsResponse = await fetch("../data/risk_actions.csv");
+
+  const actionsResponse = await fetch("data/risk_actions.csv");
   const actionsText = await actionsResponse.text();
   const actions = parseCSV(actionsText);
 
+
   const sortedRisks = [...risks].sort((a, b) => b.risk_score - a.risk_score);
 
+
   document.getElementById("totalRisks").textContent = risks.length;
-  document.getElementById("highestRisk").textContent = sortedRisks[0]?.risk_score ?? 0;
+
+  document.getElementById("highestRisk").textContent =
+    sortedRisks.length > 0 ? sortedRisks[0].risk_score : 0;
+
   document.getElementById("totalActions").textContent = actions.length;
+
+
 
   const tbody = document.querySelector("#riskTable tbody");
   tbody.innerHTML = "";
 
-  sortedRisks.slice(0, 5).forEach(risk => {
+  sortedRisks.slice(0,5).forEach(risk => {
+
     const tr = document.createElement("tr");
+
     tr.innerHTML = `
       <td>${risk.risk_description || ""}</td>
       <td>${risk.impact_level}</td>
       <td>${risk.probability_level}</td>
       <td>${risk.risk_score}</td>
     `;
+
     tbody.appendChild(tr);
+
   });
 
-  new Chart(document.getElementById("riskChart"), {
+
+
+  const ctx = document.getElementById("riskChart");
+
+  new Chart(ctx, {
     type: "bar",
     data: {
       labels: sortedRisks.map(r => r.risk_description),
-      datasets: [
-        {
-          label: "Risk Score",
-          data: sortedRisks.map(r => r.risk_score),
-          borderWidth: 1
-        }
-      ]
+      datasets: [{
+        label: "Risk Score",
+        data: sortedRisks.map(r => r.risk_score),
+        backgroundColor: "#2a6db0"
+      }]
     },
     options: {
       responsive: true,
@@ -73,6 +88,7 @@ async function loadDashboard() {
       }
     }
   });
+
 }
 
 loadDashboard();
