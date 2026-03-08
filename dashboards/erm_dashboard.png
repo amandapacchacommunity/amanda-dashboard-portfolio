@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ERM Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Enterprise Risk Management Dashboard</h1>
+      <p>Interactive dashboard for risk scoring and mitigation tracking.</p>
+      <p><a class="button-link" href="index.html">← Back to Portfolio</a></p>
+    </header>
 
+    <section class="cards">
+      <div class="card">
+        <h3>Total Risks</h3>
+        <p id="totalRisks">0</p>
+      </div>
+
+      <div class="card">
+        <h3>Highest Risk Score</h3>
+        <p id="highestRisk">0</p>
+      </div>
+
+      <div class="card">
+        <h3>Total Mitigation Actions</h3>
+        <p id="totalActions">0</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Risk Score Overview</h2>
+      <canvas id="riskChart"></canvas>
+    </section>
+
+    <section class="panel">
+      <h2>Top Risks</h2>
+      <table id="riskTable">
+        <thead>
+          <tr>
+            <th>Risk</th>
+            <th>Impact</th>
+            <th>Probability</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
