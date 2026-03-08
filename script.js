@@ -15,7 +15,7 @@ function parseCSV(text) {
 }
 
 async function loadDashboard() {
-  const riskResponse = await fetch("data/risk_register.csv");
+  const riskResponse = await fetch("../data/risk_register.csv");
   const riskText = await riskResponse.text();
 
   const risks = parseCSV(riskText).map(r => ({
@@ -25,7 +25,7 @@ async function loadDashboard() {
     risk_score: Number(r.impact_level) * Number(r.probability_level)
   }));
 
-  const actionsResponse = await fetch("data/risk_actions.csv");
+  const actionsResponse = await fetch("../data/risk_actions.csv");
   const actionsText = await actionsResponse.text();
   const actions = parseCSV(actionsText);
 
