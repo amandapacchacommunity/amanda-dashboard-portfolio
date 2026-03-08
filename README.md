@@ -78,6 +78,35 @@ This dataset allows dashboards to track **mitigation progress and operational ri
 
 ---
 
+## Key Insights from the Dashboard
+
+Analysis of the risk register and mitigation actions highlights several important operational risk patterns.
+
+### Critical Risk Areas
+Technology risk and disruption of services represent the highest priority risks due to their high impact and probability scores. These risks require continuous monitoring and proactive mitigation strategies.
+
+### Operational Risk Distribution
+Facilities management and financial stability risks appear frequently across mitigation plans, indicating that infrastructure reliability and financial planning are key operational concerns.
+
+### Mitigation Strategy Trends
+Most mitigation actions fall into three categories:
+
+- **Risk Reduction** – implementing controls, training, and system improvements  
+- **Risk Transfer** – using insurance or contractual arrangements  
+- **Risk Monitoring** – audits, inspections, and ongoing performance tracking  
+
+### Risk Management Focus
+The dashboard visualizations demonstrate how organizations prioritize risk management activities by:
+
+- identifying high-impact risks
+- assigning mitigation owners
+- tracking mitigation progress
+- monitoring operational risk trends
+
+These insights support **executive decision-making and strategic planning** within an Enterprise Risk Management framework.
+
+---
+
 ## Example Dashboard Use Cases
 
 These datasets can be used to create dashboards such as:
