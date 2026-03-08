@@ -1,1 +1,7 @@
-
+risk_category,assigned_mitigation_plan,action,mitigation_impact,quarter,owner,erm_bcm,status
+Disruption of Services,Emergency preparedness,Update emergency response plan,0.10,Q1,Campus Safety,BCM,In Progress
+Disruption of Services,Emergency preparedness,Schedule emergency drills,0.10,Q1,Campus Safety,BCM,Completed
+Disruption of Services,Remote delivery infrastructure,Invest in learning management system,0.10,Q2,IT,BCM,In Progress
+Facilities Management,Preventive maintenance,Perform HVAC inspections,0.10,Q1,Facilities,Operations,Completed
+Financial Stability,Revenue diversification,Launch new online programs,0.10,Q2,Academic Affairs,Strategy,Planned
+Technology Risk,Cybersecurity upgrades,Implement MFA authentication,0.10,Q1,IT Security,Cyber,Completed
