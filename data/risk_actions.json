@@ -1,1 +1,29 @@
-
+[
+  {
+    "risk_category": "Disruption of Services",
+    "assigned_mitigation_plan": "Emergency preparedness",
+    "action": "Update emergency response plan",
+    "mitigation_impact": 0.10,
+    "quarter": "Q1",
+    "owner": "Campus Safety",
+    "erm_bcm": "BCM"
+  },
+  {
+    "risk_category": "Disruption of Services",
+    "assigned_mitigation_plan": "Emergency preparedness",
+    "action": "Schedule emergency drills",
+    "mitigation_impact": 0.10,
+    "quarter": "Q1",
+    "owner": "Campus Safety",
+    "erm_bcm": "BCM"
+  },
+  {
+    "risk_category": "Technology Risk",
+    "assigned_mitigation_plan": "Cybersecurity upgrades",
+    "action": "Implement MFA authentication",
+    "mitigation_impact": 0.10,
+    "quarter": "Q1",
+    "owner": "IT Security",
+    "erm_bcm": "Cyber"
+  }
+]
