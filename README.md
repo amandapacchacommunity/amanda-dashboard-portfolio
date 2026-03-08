@@ -1,36 +1,66 @@
-# Amanda Dashboard Portfolio
+# Enterprise Risk Management Dashboard Portfolio
 
-This repository contains mock data and models used to demonstrate Enterprise Risk Management (ERM) dashboards.
+This repository contains datasets, documentation, and visualizations used to demonstrate an **Enterprise Risk Management (ERM) dashboard**.
 
-## Contents
+The project models how organizations identify risks, assign mitigation strategies, and track operational actions through structured data.
 
-- Risk Register dataset
-- Mitigation actions dataset
-- Dashboard visualizations
+---
 
-## Dataset Structure
+## Project Overview
 
-### risk_register.csv
-Contains risk scoring data including:
-- impact level
-- probability level
-- priority score
+Organizations use ERM frameworks to monitor risks that may affect operations, finances, technology, safety, and reputation.
 
-### risk_actions.csv
-Contains mitigation actions linked to risks.
+This project simulates a **risk register and mitigation action tracking system** that can power executive dashboards and operational reporting.
 
-## Purpose
+The datasets and visuals included here demonstrate how risk data can be transformed into meaningful analytics.
 
-This dataset is designed for:
-- Risk dashboards
-- Executive reporting
-- Business continuity planning
+---
 
 ## Repository Structure
 
-- `data/` – source datasets for the dashboard
-- `dashboards/` – exported dashboard images
-- `docs/` – project notes and model description
+- `data/` – source datasets for the dashboard  
+- `dashboards/` – exported dashboard images  
+- `docs/` – project notes and model description  
+
+---
+
+## Datasets
+
+### risk_register.csv
+
+Contains the primary risk register with information about each risk.
+
+Fields include:
+
+- Risk description
+- Impact description
+- Impact level
+- Probability level
+- Priority score
+- Responsible owner
+- Risk status
+
+These values allow calculation of **risk priority and heatmap positioning**.
+
+---
+
+### risk_actions.csv / risk_actions.json
+
+Contains mitigation actions associated with each risk category.
+
+Fields include:
+
+- Risk category
+- Assigned mitigation plan
+- Action
+- Mitigation impact score
+- Quarter
+- Owner
+- ERM / BCM classification
+
+This dataset allows dashboards to track **mitigation progress and operational risk reduction**.
+
+---
 
 ## Dashboard Visualizations
 
@@ -45,3 +75,42 @@ This dataset is designed for:
 
 ### Dashboard Mockup
 ![Dashboard Mockup](dashboards/dashboard_mockup.png)
+
+---
+
+## Example Dashboard Use Cases
+
+These datasets can be used to create dashboards such as:
+
+- Risk heatmaps
+- Risk category summaries
+- Mitigation progress tracking
+- Quarterly risk action reporting
+- Executive risk summaries
+
+Tools commonly used for these dashboards include:
+
+- Power BI
+- Tableau
+- Python dashboards (Streamlit / Plotly)
+- Web dashboards (React / D3)
+
+---
+
+## Purpose of This Project
+
+This repository demonstrates how structured risk data can support:
+
+- Enterprise risk management
+- Business continuity planning
+- Operational oversight
+- Executive decision-making
+
+The goal is to show how **raw risk data can be transformed into clear dashboard insights**.
+
+---
+
+## Author
+
+Amanda Paccha  
+Data Analytics & Risk Analytics Portfolio Project
