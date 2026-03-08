@@ -25,3 +25,9 @@ This dataset is designed for:
 - Risk dashboards
 - Executive reporting
 - Business continuity planning
+
+## Repository Structure
+
+- `data/` – source datasets for the dashboard
+- `dashboards/` – exported dashboard images
+- `docs/` – project notes and model description 
