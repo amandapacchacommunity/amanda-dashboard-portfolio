@@ -139,6 +139,34 @@ The goal is to show how **raw risk data can be transformed into clear dashboard 
 
 ---
 
+## How to Use This Dataset
+
+The datasets in this repository can be used to build risk management dashboards and analytics models.
+
+### Example Workflow
+
+1. Import the datasets into a visualization tool such as Power BI or Tableau.
+2. Use the **risk_register.csv** file to calculate risk priority scores and generate risk heatmaps.
+3. Use the **risk_actions.csv** dataset to track mitigation activities and operational progress.
+4. Join the datasets by **risk category or mitigation plan** to analyze how mitigation strategies reduce overall risk exposure.
+
+### Example Analytics Questions
+
+These datasets support analysis such as:
+
+- Which risks have the highest priority scores?
+- Which mitigation plans address the largest number of risks?
+- How are mitigation efforts distributed across departments?
+- Which operational areas require the most risk monitoring?
+
+---
+
+## Author
+
+Amanda Paccha  
+Data Analytics & Risk Analytics Portfolio Project
+---
+
 ## Author
 
 Amanda Paccha  
