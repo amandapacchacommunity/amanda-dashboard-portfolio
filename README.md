@@ -30,4 +30,18 @@ This dataset is designed for:
 
 - `data/` – source datasets for the dashboard
 - `dashboards/` – exported dashboard images
-- `docs/` – project notes and model description 
+- `docs/` – project notes and model description
+
+## Dashboard Visualizations
+
+### ERM Dashboard
+![ERM Dashboard](dashboards/erm_dashboard.png)
+
+### Risk Heatmap
+![Risk Heatmap](dashboards/risk_heatmap.png)
+
+### Mitigation Summary
+![Mitigation Summary](dashboards/mitigation_summary.png)
+
+### Dashboard Mockup
+![Dashboard Mockup](dashboards/dashboard_mockup.png)
