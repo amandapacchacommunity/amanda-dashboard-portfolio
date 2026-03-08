@@ -3,53 +3,120 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enterprise Risk Dashboard</title>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <link rel="stylesheet" href="style.css" />
+  <title>Amanda Dashboard Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f7f8fa;
+      color: #222;
+    }
+    header {
+      background: #1f4e79;
+      color: white;
+      padding: 32px 20px;
+      text-align: center;
+    }
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+    }
+    a.button {
+      display: inline-block;
+      padding: 10px 16px;
+      background: #1f4e79;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Enterprise Risk Dashboard</h1>
-      <p>Risk overview, scoring, and mitigation tracking</p>
-    </header>
+  <header>
+    <h1>Enterprise Risk Management Dashboard Portfolio</h1>
+    <p>Amanda Paccha | Risk Analytics and Dashboard Project</p>
+  </header>
 
-    <section class="cards">
-      <div class="card">
-        <h3>Total Risks</h3>
-        <p id="totalRisks">0</p>
-      </div>
-      <div class="card">
-        <h3>Highest Risk Score</h3>
-        <p id="highestRisk">0</p>
-      </div>
-      <div class="card">
-        <h3>Mitigation Actions</h3>
-        <p id="totalActions">0</p>
+  <main>
+    <section class="card">
+      <h2>Project Overview</h2>
+      <p>
+        This portfolio project demonstrates an Enterprise Risk Management dashboard
+        using a risk register, mitigation actions, and summary visualizations.
+      </p>
+      <a class="button" href="data/risk_register.csv">View Risk Register CSV</a>
+      <a class="button" href="data/risk_actions.csv">View Risk Actions CSV</a>
+      <a class="button" href="data/risk_actions.json" download>Download Risk Actions JSON</a>
+    </section>
+
+    <section class="card">
+      <h2>Dashboard Visualizations</h2>
+      <div class="grid">
+        <div>
+          <h3>ERM Dashboard</h3>
+          <img src="dashboards/erm_dashboard.png" alt="ERM Dashboard">
+        </div>
+        <div>
+          <h3>Risk Heatmap</h3>
+          <img src="dashboards/risk_heatmap.png" alt="Risk Heatmap">
+        </div>
+        <div>
+          <h3>Mitigation Summary</h3>
+          <img src="dashboards/mitigation_summary.png" alt="Mitigation Summary">
+        </div>
+        <div>
+          <h3>Dashboard Mockup</h3>
+          <img src="dashboards/dashboard_mockup.png" alt="Dashboard Mockup">
+        </div>
       </div>
     </section>
 
-    <section class="panel">
-      <h2>Risk Scores</h2>
-      <canvas id="riskChart"></canvas>
+    <section class="card">
+      <h2>Key Insights</h2>
+      <ul>
+        <li>Technology risk and service disruption appear as high-priority areas.</li>
+        <li>Mitigation actions are distributed across business continuity, operations, and compliance.</li>
+        <li>The dashboard structure supports executive reporting and risk monitoring.</li>
+      </ul>
     </section>
+  </main>
 
-    <section class="panel">
-      <h2>Top Risks</h2>
-      <table id="riskTable">
-        <thead>
-          <tr>
-            <th>Risk</th>
-            <th>Impact</th>
-            <th>Probability</th>
-            <th>Score</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </section>
-  </div>
-
-  <script src="script.js"></script>
+  <footer>
+    © Amanda Paccha | Dashboard Portfolio
+  </footer>
 </body>
 </html>
+
+
